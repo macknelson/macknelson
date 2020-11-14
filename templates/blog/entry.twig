@@ -1,0 +1,46 @@
+{% include "includes/head.twig" %}
+<link rel="stylesheet" href="/assets/css/work-single.css" type="text/css">
+<script src="https://kit.fontawesome.com/4568b5e286.js" crossorigin="anonymous"></script>
+<!-- Plugin CSS -->
+<link type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.10.2/css/OverlayScrollbars.min.css" rel="stylesheet"/>
+<!-- Plugin JS -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.10.2/js/jquery.overlayScrollbars.min.js"></script>
+<div class="index-main">
+    {% include "includes/static-bio.twig" %}
+    <style>
+        .work-single-main {
+            background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8)), url("https://i.imgur.com/NTj2rDi.jpg");
+        }
+    </style>
+    <div class="work-previous-pane">
+
+    </div>
+    <section class="work-single-main">
+        {% include "includes/nav.twig" %}
+        <div class="work-single-scroller">
+            <div class="work-single-container">
+                <h2>{{ entry.title }} <i>|</i> <span>{{ entry.company }}</span></h2>
+                <h3>{{ entry.employmentStart }} - {{ entry.employmentEnd }} | {{ entry.location }}</h3>
+                {{ entry.fullDescription }}
+            </div>
+        </div>
+    </section>
+</div>
+<script>
+    $(document).ready(function () {
+        $(".work-entry:not(:first) > .work-entry-toggle > .work-entry-content").animate({
+            height: "toggle",
+            opacity: "toggle"
+        }, "fast");
+        $(".work-entry:not(:first) > .work-entry-toggle > h2").find('i').toggleClass("chevron-flip");
+        $(".work-entry-toggle > h2").click(function () {
+            $(this).parent("div").children("div").animate({
+                height: "toggle",
+                opacity: "toggle"
+            }, "slow");
+            $(this).find('i').toggleClass("chevron-flip");
+        });
+        $(".work-single-scroller").overlayScrollbars({ className : "os-theme-light" });
+    });
+</script>
+{% include "includes/footer.twig" %}

@@ -1,0 +1,33 @@
+fieldLayouts:
+  bedd3f43-113d-4ed5-9977-ac2a405d480b:
+    tabs:
+      -
+        fields:
+          0097a8c9-b600-4663-9b3d-bb9c2057cc21:
+            required: false
+            sortOrder: 4
+          29e57e38-a82b-4285-97a1-ea078a526cc4:
+            required: false
+            sortOrder: 2
+          47d7eb48-f46e-4a61-89fc-19325444ae55:
+            required: false
+            sortOrder: 3
+          4802e565-f215-4e70-8905-eabe73114156:
+            required: false
+            sortOrder: 6
+          5d133f93-0011-4f1a-aa0e-cbf6cabb61ff:
+            required: false
+            sortOrder: 1
+          77e4f25a-e35b-4103-95d6-0607ff97f868:
+            required: false
+            sortOrder: 7
+          8c223274-6abb-4ca3-b629-a15328baabf5:
+            required: false
+            sortOrder: 5
+          c5e9e747-a8b1-4dc5-9626-1e7f917d7ca5:
+            required: false
+            sortOrder: 8
+        name: Content
+        sortOrder: 1
+handle: sidebarStaticContent
+name: 'Sidebar Static Content'

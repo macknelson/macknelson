@@ -1,0 +1,61 @@
+fieldLayouts:
+  688a26cc-a826-4c12-97fc-62a968705c04:
+    tabs:
+      -
+        elements:
+          -
+            instructions: null
+            label: ''
+            type: craft\fieldlayoutelements\EntryTitleField
+          -
+            fieldUid: 5d133f93-0011-4f1a-aa0e-cbf6cabb61ff
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 29e57e38-a82b-4285-97a1-ea078a526cc4
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 47d7eb48-f46e-4a61-89fc-19325444ae55
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: c5e9e747-a8b1-4dc5-9626-1e7f917d7ca5
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 0097a8c9-b600-4663-9b3d-bb9c2057cc21
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 77e4f25a-e35b-4103-95d6-0607ff97f868
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 8c223274-6abb-4ca3-b629-a15328baabf5
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 4802e565-f215-4e70-8905-eabe73114156
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: e7cbe35f-e5df-4a7f-8338-5c8f7ac4541d
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 198dcfb7-9fda-4198-961f-d9afd1e341a1
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 29dfcb29-5d44-4f88-9a5f-0d8d8d7df15c
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: Homepage
+        sortOrder: 1
+handle: homepage
+hasTitleField: false
+name: Homepage
+section: d6f6d451-2e42-4996-a01f-b2ed0b69e411
+sortOrder: 1
+titleFormat: '{section.name|raw}'

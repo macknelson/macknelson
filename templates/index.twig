@@ -1,0 +1,49 @@
+{% include "includes/head.twig" %}
+<link rel="stylesheet" href="/assets/css/index.css" type="text/css">
+<script src="https://kit.fontawesome.com/4568b5e286.js" crossorigin="anonymous"></script>
+<div class="index-main">
+        {% include "includes/static-bio.twig" %}
+    <section class="dynamic-content homepage">
+        <a href="/work" class="page-delay">
+        <div class="work">
+            <div>
+                <h2>Work</h2>
+                <h3>{{entry.homepageWorkSubtitle}}</h3>
+            </div>
+        </div>
+        </a>
+        <a href="/about" class="page-delay">
+        <div class="hobbies">
+            <div>
+                <h2>About Me</h2>
+                <h3>{{entry.homepageHobbiesSubtitle}}</h3>
+            </div>
+        </div>
+        </a>
+        <a href="/articles">
+        <div class="articles">
+            <div>
+                <h2>Articles</h2>
+                <h3>{{entry.homepageArticlesSubtitle}}</h3>
+            </div>
+        </div>
+        </a>
+    </section>
+</div>
+<script>
+    $(window).on("load", function() {
+        $('.dynamic-content').addClass("bgil");
+        window.setTimeout(function(){$('.dynamic-content, .static-bio').addClass("overlay-loaded");}, 450);
+    });
+    $( ".page-delay" ).click(function() {
+        $(".dynamic-content").addClass("page-transition");
+        $(".page-delay").removeClass("page-transition-open");
+        $(this).addClass("page-transition-open");
+        $(this).addClass("unbw");
+    });
+    $('.page-delay').click(function(e) {
+        e.preventDefault();
+        setTimeout(function(url) { window.location = url }, 600, this.href);
+    });
+</script>
+{% include "includes/footer.twig" %}

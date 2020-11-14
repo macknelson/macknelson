@@ -1,0 +1,53 @@
+fieldLayouts:
+  421c67f1-ef21-4770-9029-f17c1e104ab5:
+    tabs:
+      -
+        elements:
+          -
+            instructions: null
+            label: 'Job Title'
+            type: craft\fieldlayoutelements\EntryTitleField
+          -
+            fieldUid: cda62238-bfe9-44ae-a8bb-1b0bbc01bd44
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 168a1c88-8a01-48f8-a910-61e7f66f0133
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: fba6868f-f42a-4339-8d44-687ffda322d4
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: c1af7c0d-6291-4d89-9688-dca3b69c53ba
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: e709a33f-037c-460b-bcf5-4bf32b09b2df
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 3be637a6-bfe2-483b-a2fb-4c4c57672922
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 28f505a7-64e0-4151-b9d3-c1a35a008229
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: f76465f5-43fe-4c4b-b34c-dc6e218c9770
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 533f0b92-38fe-4773-be1b-1da4054b7c4e
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: 'Tab 1'
+        sortOrder: 1
+handle: work
+hasTitleField: true
+name: Work
+section: 2bda2e11-998b-4c3b-afad-d7ad5df3ad95
+sortOrder: 1
+titleFormat: ''

@@ -1,0 +1,39 @@
+{% include "includes/head.twig" %}
+<link rel="stylesheet" href="/assets/css/about.css" type="text/css">
+<script src="https://kit.fontawesome.com/4568b5e286.js" crossorigin="anonymous"></script>
+<!-- Plugin CSS -->
+<link type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.10.2/css/OverlayScrollbars.min.css" rel="stylesheet"/>
+<!-- Plugin JS -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.10.2/js/jquery.overlayScrollbars.min.js"></script>
+<div class="index-main">
+    {% include "includes/static-bio.twig" %}
+    <section class="about-main">
+        {% include "includes/nav.twig" %}
+        <div class="about-scroller">
+            <div class="about-container">
+                <h2>About Me</h2>
+                <h3>Who am I, really?</h3>
+
+                {{ entry.fullDescription }}
+            </div>
+        </div>
+    </section>
+</div>
+<script>
+    $(document).ready(function () {
+        $(".work-entry:not(:first) > .work-entry-toggle > .work-entry-content").animate({
+            height: "toggle",
+            opacity: "toggle"
+        }, "fast");
+        $(".work-entry:not(:first) > .work-entry-toggle > h2").find('i').toggleClass("chevron-flip");
+        $(".work-entry-toggle > h2").click(function () {
+            $(this).parent("div").children("div").animate({
+                height: "toggle",
+                opacity: "toggle"
+            }, "slow");
+            $(this).find('i').toggleClass("chevron-flip");
+        });
+        $(".about-scroller").overlayScrollbars({ className : "os-theme-dark" });
+    });
+</script>
+{% include "includes/footer.twig" %}

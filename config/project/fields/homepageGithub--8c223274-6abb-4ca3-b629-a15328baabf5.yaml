@@ -1,0 +1,16 @@
+contentColumnType: text
+fieldGroup: 8a13fe14-3631-4781-8dfb-fcdcf59d35c9
+handle: homepageGithub
+instructions: ''
+name: 'Homepage GitHub'
+searchable: true
+settings:
+  charLimit: ''
+  code: ''
+  columnType: text
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

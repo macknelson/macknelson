@@ -1,0 +1,20 @@
+contentColumnType: text
+fieldGroup: 2270990d-10df-4e07-9c5a-7b8cfa1b0000
+handle: fullDescription
+instructions: 'Explanation for full page'
+name: 'Full Description'
+searchable: true
+settings:
+  availableTransforms: '*'
+  availableVolumes: '*'
+  cleanupHtml: true
+  columnType: text
+  purifierConfig: ''
+  purifyHtml: '1'
+  redactorConfig: ''
+  removeEmptyTags: '1'
+  removeInlineStyles: '1'
+  removeNbsp: '1'
+translationKeyFormat: null
+translationMethod: none
+type: craft\redactor\Field

@@ -1,0 +1,15 @@
+enableVersioning: true
+handle: about
+name: About
+previewTargets:
+  -
+    label: 'Primary entry page'
+    urlFormat: '{url}'
+propagationMethod: all
+siteSettings:
+  a99a72e6-4bdb-42ef-95f3-5bb0f864a042:
+    enabledByDefault: true
+    hasUrls: true
+    template: about/index
+    uriFormat: about
+type: single

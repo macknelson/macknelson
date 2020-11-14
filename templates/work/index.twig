@@ -1,0 +1,77 @@
+{% include "includes/head.twig" %}
+<link rel="stylesheet" href="/assets/css/work.css" type="text/css">
+<script src="https://kit.fontawesome.com/4568b5e286.js" crossorigin="anonymous"></script>
+<!-- Plugin CSS -->
+<link type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.10.2/css/OverlayScrollbars.min.css" rel="stylesheet"/>
+<!-- Plugin JS -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.10.2/js/jquery.overlayScrollbars.min.js"></script>
+<div class="index-main">
+    {% include "includes/static-bio.twig" %}
+    <section class="work-main">
+        {% include "includes/nav.twig" %}
+        <div>
+
+            <h2>Work</h2>
+            <h3>Where I've been and where I'm at.</h3>
+
+            <div class="work-container">
+                {% set entries = craft.entries.section('workentries').all() %}
+                {% for entry in entries %}
+
+                    <div class="work-entry">
+                        <div class="work-entry-toggle">
+                            <h2><span>{{ entry.title }}</span> <b>|</b>  {{ entry.company }} <i class="fas fa-chevron-down"></i></h2>
+                            <h3>{{ entry.employmentStart }} - {{ entry.employmentEnd }} | {{ entry.location }}</h3>
+                            <div class="work-entry-content">
+                                {{ entry.workIntroContent }}
+
+                                {% if entry.fullDescription|length %}
+                                    <a class="page-delay" href="/work/{{ entry.slug }}" class="work-cta">View All Info</a>
+                                {% endif %}
+
+                                <div>
+                                    <div>
+                                        <h4>Tools</h4>
+                                        {{ entry.tools }}
+
+                                    </div>
+                                    <div>
+                                        <h4>Languages</h4>
+                                        {{ entry.languages }}
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+</div>
+<script>
+    $(document).ready(function () {
+        $(".work-entry:not(:first) > .work-entry-toggle > .work-entry-content").animate({
+            height: "toggle",
+            opacity: "toggle"
+        }, "fast");
+        $(".work-entry:not(:first) > .work-entry-toggle > h2").find('i').toggleClass("chevron-flip");
+        $(".work-entry-toggle > h2").click(function () {
+            $(this).parent("div").children("div").animate({
+                height: "toggle",
+                opacity: "toggle"
+            }, "slow");
+            $(this).find('i').toggleClass("chevron-flip");
+        });
+        $(".work-container").overlayScrollbars({ className : "os-theme-light" });
+        $( ".page-delay" ).click(function() {
+            $(".work-main > div:nth-of-type(2)").addClass("page-transition");
+        });
+        $('.page-delay').click(function(e) {
+            e.preventDefault();
+            setTimeout(function(url) { window.location = url }, 400, this.href);
+        });
+    });
+</script>
+{% include "includes/footer.twig" %}

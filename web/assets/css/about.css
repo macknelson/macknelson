@@ -1,0 +1,106 @@
+.nav {
+    color: #000;
+}
+.about-main {
+    background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0.9)), url(https://i.imgur.com/7zvCybt.jpg);
+    background-size: cover !important;
+    background-position: center !important;
+    width: 66.6666%;
+    position: relative;
+    color: #000;
+    overflow: hidden;
+    z-index: 0;
+}
+.about-main:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, .9);
+    z-index: 0;
+}
+.about-scroller {
+    overflow: scroll;
+    height: 100%;
+    -webkit-animation-name: after-delay; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 500ms; /* Safari 4.0 - 8.0 */
+    animation-name: after-delay;
+    animation-duration: 500ms;
+    z-index: 10;
+}
+.about-container {
+    margin-top: 0;
+    margin-left: 50px;
+    position: relative;
+    z-index: 20;
+    padding-bottom: 60px;
+}
+.about-container h2 {
+    font-size: 6rem;
+    font-weight: bold;
+}
+.about-container h2 > span {
+    font-weight: 400;
+}
+.about-container h3 {
+    font-size: 2rem;
+    font-weight: 100;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+.about-container p {
+    padding-right: 50px;
+    font-weight: 300;
+    font-size: 1.4rem;
+    padding-bottom: 25px;
+    max-width: 850px;
+}
+.about-container a {
+    color: #ffae00;
+}
+.page-transition {
+    animation: index-to-single ease-out 600ms forwards;
+}
+.transition-plane {
+    position: absolute;
+    width: 100%;
+    height: 0;
+    background: #fff;
+    z-index: 1;
+    bottom: 0;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes after-delay {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* Standard syntax */
+@keyframes after-delay {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@-webkit-keyframes after-delay-bg {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* Standard syntax */
+@keyframes after-delay-bg {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+/* Standard syntax */
+@media screen and (max-width: 990px) {
+    .nav {
+        position: relative;
+        z-index: 10;
+    }
+    .about-scroller {
+        background: #fff;
+        position: relative;
+        z-index: 10;
+    }
+}

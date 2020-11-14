@@ -1,0 +1,16 @@
+contentColumnType: text
+fieldGroup: 2270990d-10df-4e07-9c5a-7b8cfa1b0000
+handle: employmentEnd
+instructions: 'When I finished work'
+name: 'Employment End'
+searchable: true
+settings:
+  charLimit: ''
+  code: ''
+  columnType: text
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

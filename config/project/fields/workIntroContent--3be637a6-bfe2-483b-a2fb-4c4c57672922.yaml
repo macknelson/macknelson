@@ -1,0 +1,13 @@
+contentColumnType: text
+fieldGroup: 2270990d-10df-4e07-9c5a-7b8cfa1b0000
+handle: workIntroContent
+instructions: 'Truncated job description'
+name: 'Work Intro Content'
+searchable: true
+settings:
+  columnType: text
+  purifierConfig: ''
+  purifyHtml: ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\ckeditor\Field

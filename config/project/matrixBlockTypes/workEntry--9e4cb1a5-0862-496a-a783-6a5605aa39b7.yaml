@@ -1,0 +1,203 @@
+field: 1aeb6fd7-a9a1-46fe-81c8-ad8fc61b8f23
+fieldLayouts:
+  2c42ab9a-1b43-4267-94df-27e282eb8b3d:
+    tabs:
+      -
+        fields:
+          11fc5315-6c52-4a62-91bc-706de25cdeab:
+            required: false
+            sortOrder: 4
+          155e9825-1fc0-476f-9e19-4afbd9afa36d:
+            required: false
+            sortOrder: 7
+          3863bd4d-2fae-4efb-93a8-ce3b294ca909:
+            required: false
+            sortOrder: 2
+          41dd897e-9bed-41bb-be72-1d5ede9058a1:
+            required: true
+            sortOrder: 1
+          43ee68a2-8fe4-4101-bb9d-de3c69359577:
+            required: false
+            sortOrder: 8
+          5022410f-cf70-46f1-9252-85d64b95ec47:
+            required: false
+            sortOrder: 9
+          c04aa419-2f35-472b-9ec2-242408d3424e:
+            required: false
+            sortOrder: 6
+          c9d127bb-72be-4e0d-881d-1a8b956c6035:
+            required: false
+            sortOrder: 3
+          dc5cb964-7474-4106-935d-dbbf84dc50f9:
+            required: false
+            sortOrder: 10
+          fd916d2a-4503-4717-931a-ae435f541e11:
+            required: false
+            sortOrder: 5
+        name: Content
+        sortOrder: 1
+fields:
+  11fc5315-6c52-4a62-91bc-706de25cdeab:
+    contentColumnType: text
+    fieldGroup: null
+    handle: employmentEnd
+    instructions: 'When I finished work'
+    name: 'Employment End'
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  155e9825-1fc0-476f-9e19-4afbd9afa36d:
+    contentColumnType: text
+    fieldGroup: null
+    handle: workIntroContent
+    instructions: 'Truncated job description'
+    name: 'Work Intro Content'
+    searchable: true
+    settings:
+      columnType: text
+      purifierConfig: ''
+      purifyHtml: '1'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\ckeditor\Field
+  3863bd4d-2fae-4efb-93a8-ce3b294ca909:
+    contentColumnType: text
+    fieldGroup: null
+    handle: workCompany
+    instructions: 'Company I worked for'
+    name: 'Work Company'
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  41dd897e-9bed-41bb-be72-1d5ede9058a1:
+    contentColumnType: text
+    fieldGroup: null
+    handle: workTitle
+    instructions: 'Title of job'
+    name: 'Work Title'
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  43ee68a2-8fe4-4101-bb9d-de3c69359577:
+    contentColumnType: text
+    fieldGroup: null
+    handle: fullDescriptionCta
+    instructions: 'Link to full page'
+    name: 'Full Description CTA'
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  5022410f-cf70-46f1-9252-85d64b95ec47:
+    contentColumnType: text
+    fieldGroup: null
+    handle: workTools
+    instructions: 'Tools I used in job'
+    name: 'Work Tools'
+    searchable: true
+    settings:
+      columnType: text
+      purifierConfig: ''
+      purifyHtml: '1'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\ckeditor\Field
+  c04aa419-2f35-472b-9ec2-242408d3424e:
+    contentColumnType: text
+    fieldGroup: null
+    handle: workLocationUrl
+    instructions: 'Google Maps URL for place worked'
+    name: 'Work Location Url'
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  c9d127bb-72be-4e0d-881d-1a8b956c6035:
+    contentColumnType: text
+    fieldGroup: null
+    handle: employmentStart
+    instructions: 'When I started work'
+    name: 'Employment Start'
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  dc5cb964-7474-4106-935d-dbbf84dc50f9:
+    contentColumnType: text
+    fieldGroup: null
+    handle: workLanguages
+    instructions: 'Languages used at job'
+    name: 'Work Languages'
+    searchable: true
+    settings:
+      columnType: text
+      purifierConfig: ''
+      purifyHtml: '1'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\ckeditor\Field
+  fd916d2a-4503-4717-931a-ae435f541e11:
+    contentColumnType: text
+    fieldGroup: null
+    handle: workLocation
+    instructions: ''
+    name: 'Work Location'
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: workEntry
+name: 'Work Entry'
+sortOrder: 1

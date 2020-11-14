@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'Scout';
+    src: url('/assets/fonts/Scout-Regular.eot');
+    src: url('/assets/fonts/Scout-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/Scout-Regular.woff2') format('woff2'),
+        url('/assets/fonts/Scout-Regular.woff') format('woff'),
+        url('/assets/fonts/Scout-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Scout';
+    src: url('/assets/fonts/Scout-Bold.eot');
+    src: url('/assets/fonts/Scout-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/Scout-Bold.woff2') format('woff2'),
+        url('/assets/fonts/Scout-Bold.woff') format('woff'),
+        url('/assets/fonts/Scout-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Scout';
+    src: url('/assets/fonts/Scout-Black.eot');
+    src: url('/assets/fonts/Scout-Black.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/Scout-Black.woff2') format('woff2'),
+        url('/assets/fonts/Scout-Black.woff') format('woff'),
+        url('/assets/fonts/Scout-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Scout';
+    src: url('/assets/fonts/Scout-ExtraLight.eot');
+    src: url('/assets/fonts/Scout-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/Scout-ExtraLight.woff2') format('woff2'),
+        url('/assets/fonts/Scout-ExtraLight.woff') format('woff'),
+        url('/assets/fonts/Scout-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Scout';
+    src: url('/assets/fonts/Scout-Thin.eot');
+    src: url('/assets/fonts/Scout-Thin.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/Scout-Thin.woff2') format('woff2'),
+        url('/assets/fonts/Scout-Thin.woff') format('woff'),
+        url('/assets/fonts/Scout-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Scout';
+    src: url('/assets/fonts/Scout-Light.eot');
+    src: url('/assets/fonts/Scout-Light.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/Scout-Light.woff2') format('woff2'),
+        url('/assets/fonts/Scout-Light.woff') format('woff'),
+        url('/assets/fonts/Scout-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+

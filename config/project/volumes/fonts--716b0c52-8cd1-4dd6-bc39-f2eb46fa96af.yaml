@@ -1,0 +1,8 @@
+handle: fonts
+hasUrls: true
+name: Fonts
+settings:
+  path: '@root/assets/fonts'
+sortOrder: 1
+type: craft\volumes\Local
+url: '@root/assets/fonts'

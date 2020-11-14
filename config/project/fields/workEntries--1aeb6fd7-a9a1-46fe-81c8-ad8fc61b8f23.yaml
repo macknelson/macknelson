@@ -1,0 +1,14 @@
+contentColumnType: string
+fieldGroup: 2270990d-10df-4e07-9c5a-7b8cfa1b0000
+handle: workEntries
+instructions: 'Work Entries Matrix'
+name: 'Work Entries'
+searchable: true
+settings:
+  contentTable: '{{%matrixcontent_workentries}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

@@ -1,0 +1,21 @@
+fieldLayouts:
+  3df198dc-8066-4f07-beb9-ce03fde470cb:
+    tabs:
+      -
+        elements:
+          -
+            instructions: null
+            label: Title
+            type: craft\fieldlayoutelements\EntryTitleField
+          -
+            fieldUid: 1aeb6fd7-a9a1-46fe-81c8-ad8fc61b8f23
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: Work
+        sortOrder: 1
+handle: workHomepage
+hasTitleField: true
+name: 'Work Homepage'
+section: 2bda2e11-998b-4c3b-afad-d7ad5df3ad95
+sortOrder: 3
+titleFormat: ''

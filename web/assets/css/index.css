@@ -1,0 +1,146 @@
+.dynamic-content {
+    display: flex;
+    flex-flow: column;
+    width: 66.6666%;
+}
+.dynamic-content > a {
+    height: 50%;
+    -webkit-transition: 700ms ease-in-out;
+    -moz-transition: 700ms ease-in-out;
+    -o-transition: 700ms ease-in-out;
+    transition: 700ms ease-in-out;
+    cursor: pointer;
+}
+.dynamic-content > a:last-of-type {
+    display: none;
+}
+.dynamic-content > a > div {
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    position: relative;
+}
+.dynamic-content > a > div:hover:after {
+    filter: grayscale(0%);
+}
+.dynamic-content > a > div:hover > div h3 {
+    margin-top: 0;
+    opacity: 1;
+}
+.dynamic-content > a > div:after {
+    height: 100%;
+    width: 100%;
+    content: '';
+    position: absolute;
+    filter: grayscale(100%);
+    -webkit-transition: 500ms ease-in-out;
+    -moz-transition: 500ms ease-in-out;
+    -o-transition: 500ms ease-in-out;
+    transition: 500ms ease-in-out;
+}
+.dynamic-content > a > div > div {
+    z-index: 1;
+    margin-top: 55px;
+    margin-left: 50px;
+    -webkit-transition: 500ms ease-in-out;
+    -moz-transition: 500ms ease-in-out;
+    -o-transition: 500ms ease-in-out;
+    transition: 500ms ease-in-out;
+}
+.dynamic-content > a > div > div:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: 0;
+    -webkit-transition: 700ms ease-in-out;
+    -moz-transition: 700ms ease-in-out;
+    -o-transition: 700ms ease-in-out;
+    transition: 700ms ease-in-out;
+}
+.dynamic-content > a > div > div h2 {
+    font-size: 6rem;
+    color: #fff;
+    font-weight: bold;
+}
+.dynamic-content > a > div > div h3 {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin-top: -40px;
+    opacity: 0;
+    -webkit-transition: 500ms ease-in-out;
+    -moz-transition: 500ms ease-in-out;
+    -o-transition: 500ms ease-in-out;
+    transition: 500ms ease-in-out;
+}
+.dynamic-content.overlay-loaded > a  > div > div:after {
+    opacity: 0;
+}
+.static-bio > div > img {
+    opacity: 0;
+    -webkit-transition: 700ms ease-in-out;
+    -moz-transition: 700ms ease-in-out;
+    -o-transition: 700ms ease-in-out;
+    transition: 700ms ease-in-out;
+    margin-left: -20px;
+}
+.static-bio.overlay-loaded > div > img {
+    opacity: 1;
+    margin-left: 0;
+}
+.dynamic-content.bgil .work:after {
+    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8)), url("https://i.imgur.com/HpOqukx.jpg");
+    background-size: cover;
+    background-position: bottom;
+}
+.dynamic-content.bgil .hobbies:after {
+    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8)), url("https://i.imgur.com/7zvCybt.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.dynamic-content.bgil .articles:after {
+    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8)), url("https://i.imgur.com/xKVteey.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.unbw > div:after {
+    filter: grayscale(0%) !important;
+}
+.dynamic-content.page-transition > a {
+    height: 0;
+    overflow: hidden;
+}
+.dynamic-content.page-transition > a > div {
+    justify-content: flex-start;
+}
+.dynamic-content.page-transition > .page-transition-open {
+    height: 100%;
+}
+.dynamic-content.page-transition > a > div > div h3 {
+    opacity: 0;
+    margin-top: -40px;
+}
+@media screen and (max-width: 990px) {
+    .dynamic-content > div {
+        height: 200px;
+    }
+    .dynamic-content > a {
+        height: 300px;
+    }
+    .dynamic-content.page-transition > .page-transition-open {
+        height: 600px;
+    }
+    .dynamic-content > a > div > div h2 {
+        font-size: 3rem;
+    }
+}
+@media screen and (max-width: 550px) {
+    .dynamic-content > div > div h2 {
+        font-size: 4rem;
+    }
+}
